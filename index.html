@@ -168,54 +168,99 @@
     </div>
   </section>
 
-  <!-- Section 3: Research Program -->
-  <section id="research" class="py-24 px-6 max-w-7xl mx-auto border-b border-slate-900">
-    <div class="text-center max-w-2xl mx-auto mb-16">
-      <h2 class="text-xs font-bold tracking-widest text-cyan-400 uppercase mb-2">Research Program</h2>
-      <h3 class="text-3xl font-bold text-white tracking-tight">Core Scientific Pillars</h3>
-    </div>
-    <div class="grid md:grid-cols-3 gap-8">
+<!-- Section 2.5: Research Themes (Horizontal Rows) -->
+  <section class="py-20 px-6 bg-[#f7f5ee] text-slate-900 border-b border-slate-300">
+    <div class="max-w-7xl mx-auto">
       
-      <!-- Theme 1 -->
-      <div class="p-8 rounded-2xl bg-[#0b1524]/60 border border-slate-800 hover:border-cyan-500/50 transition-all group">
-        <div class="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-800/40 flex items-center justify-center text-cyan-400 mb-6 font-mono text-sm font-bold">
-          01
-        </div>
-        <h4 class="text-xl font-semibold text-white mb-3 group-hover:text-cyan-400 transition-colors">
-          Transposable Elements &amp; dsRNA
-        </h4>
-        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-          Investigating how ancient mobile genetic elements (SINEs, LINEs) become derepressed during malignant transformation, triggering double-stranded RNA (dsRNA) sensing and innate immune activation.
-        </p>
-        <span class="text-xs text-slate-500 font-mono">#LongReadSeq #RepeatGenomics #InnateImmunity</span>
+      <!-- Top Subheader Bar -->
+      <div class="flex justify-between items-center text-[10px] font-mono tracking-widest uppercase text-slate-500 pb-6 border-b border-slate-300">
+        <span>RESEARCH THEMES</span>
+        <span>THREE CONNECTED SCALES</span>
       </div>
 
-      <!-- Theme 2 -->
-      <div class="p-8 rounded-2xl bg-[#0b1524]/60 border border-slate-800 hover:border-cyan-500/50 transition-all group">
-        <div class="w-12 h-12 rounded-xl bg-blue-950/60 border border-blue-800/40 flex items-center justify-center text-blue-400 mb-6 font-mono text-sm font-bold">
-          02
-        </div>
-        <h4 class="text-xl font-semibold text-white mb-3 group-hover:text-cyan-400 transition-colors">
-          Epigenomics &amp; Microenvironment
-        </h4>
-        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-          Mapping how epigenetic driver alterations reshape cellular plasticity, clonal evolution, and tumor microenvironment crosstalk via single-cell transcriptomics and spatial profiling.
-        </p>
-        <span class="text-xs text-slate-500 font-mono">#scRNAseq #SpatialGenomics #TumorEcology</span>
-      </div>
+      <!-- Theme Rows Container -->
+      <div class="divide-y divide-slate-300">
 
-      <!-- Theme 3 -->
-      <div class="p-8 rounded-2xl bg-[#0b1524]/60 border border-slate-800 hover:border-cyan-500/50 transition-all group">
-        <div class="w-12 h-12 rounded-xl bg-purple-950/60 border border-purple-800/40 flex items-center justify-center text-purple-400 mb-6 font-mono text-sm font-bold">
-          03
-        </div>
-        <h4 class="text-xl font-semibold text-white mb-3 group-hover:text-cyan-400 transition-colors">
-          Computational Tools &amp; Pipelines
-        </h4>
-        <p class="text-slate-400 text-sm leading-relaxed mb-4">
-          Building scalable, open-source software and reproducible workflows to quantify complex non-coding loci and extract signal from high-dimensional cancer genomic cohorts.
-        </p>
-        <span class="text-xs text-slate-500 font-mono">#Nextflow #Python #HighThroughputBio</span>
+        <!-- Row 01: Repetitive genome -->
+        <a href="#research" class="py-12 grid grid-cols-1 md:grid-cols-12 gap-6 items-center group transition-colors hover:bg-slate-200/40 px-2 -mx-2 rounded-xl">
+          <div class="md:col-span-1 text-xs font-mono text-slate-500">01</div>
+          <div class="md:col-span-5 flex items-center gap-6">
+            <div class="w-14 h-14 rounded-full border border-teal-500/40 bg-teal-50/60 flex items-center justify-center text-teal-600 shrink-0">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.5 16.5c1.5 1.26 3 1.5 4.5 0s3-2.76 4.5-1.5 3 1.26 4.5 0"></path>
+                <path d="M4.5 7.5c1.5 1.26 3 1.5 4.5 0s3-2.76 4.5-1.5 3 1.26 4.5 0"></path>
+                <path d="M8 8.5v7"></path>
+                <path d="M16 8.5v7"></path>
+              </svg>
+            </div>
+            <h3 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
+              Repetitive genome
+            </h3>
+          </div>
+          <div class="md:col-span-5 text-sm md:text-base text-slate-600 leading-relaxed">
+            We develop computational approaches to resolve the hidden, repetitive regions of the genome and measure when they become active.
+          </div>
+          <div class="md:col-span-1 flex justify-end">
+            <div class="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center text-slate-700 group-hover:border-slate-900 group-hover:text-slate-900 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17 17 7"></path>
+                <path d="M7 7h10v10"></path>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- Row 02: Cellular identity -->
+        <a href="#research" class="py-12 grid grid-cols-1 md:grid-cols-12 gap-6 items-center group transition-colors hover:bg-slate-200/40 px-2 -mx-2 rounded-xl">
+          <div class="md:col-span-1 text-xs font-mono text-slate-500">02</div>
+          <div class="md:col-span-5 flex items-center gap-6">
+            <div class="w-14 h-14 rounded-full bg-amber-400 flex items-center justify-center text-slate-950 shrink-0 shadow-sm">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+            </div>
+            <h3 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
+              Cellular identity
+            </h3>
+          </div>
+          <div class="md:col-span-5 text-sm md:text-base text-slate-600 leading-relaxed">
+            We study how transposable elements and repeat-derived programs reshape cell state, plasticity, and immune signaling.
+          </div>
+          <div class="md:col-span-1 flex justify-end">
+            <div class="w-12 h-12 rounded-full bg-amber-400 flex items-center justify-center text-slate-950 group-hover:scale-105 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all shadow-sm">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17 17 7"></path>
+                <path d="M7 7h10v10"></path>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- Row 03: Disease evolution -->
+        <a href="#research" class="py-12 grid grid-cols-1 md:grid-cols-12 gap-6 items-center group transition-colors hover:bg-slate-200/40 px-2 -mx-2 rounded-xl">
+          <div class="md:col-span-1 text-xs font-mono text-slate-500">03</div>
+          <div class="md:col-span-5 flex items-center gap-6">
+            <div class="w-14 h-14 rounded-full border border-teal-500/40 bg-teal-50/60 flex items-center justify-center text-teal-700 font-mono text-xl shrink-0">
+              { }
+            </div>
+            <h3 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
+              Disease evolution
+            </h3>
+          </div>
+          <div class="md:col-span-5 text-sm md:text-base text-slate-600 leading-relaxed">
+            We trace these programs across cancer, aging, and neurodegeneration to reveal shared mechanisms and new therapeutic opportunities.
+          </div>
+          <div class="md:col-span-1 flex justify-end">
+            <div class="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center text-slate-700 group-hover:border-slate-900 group-hover:text-slate-900 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17 17 7"></path>
+                <path d="M7 7h10v10"></path>
+              </svg>
+            </div>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
