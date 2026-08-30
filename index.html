@@ -1,5 +1,19 @@
-<style>
-    /* Dark grid background pattern */
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Sun Lab | Computational Genomics & Systems Biology</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    code, pre { font-family: 'JetBrains Mono', monospace; }
+    .font-serif-italic { font-family: 'Newsreader', serif; font-style: italic; }
     .bg-grid-pattern {
       background-size: 56px 56px;
       background-image: 
@@ -7,14 +21,15 @@
         linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
     }
   </style>
+</head>
+<body class="bg-[#070e18] text-slate-200 antialiased selection:bg-cyan-500 selection:text-black">
 
-  <!-- Navigation Bar -->
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#060b13]/80 backdrop-blur-md border-b border-slate-800/40">
+  <!-- Sticky Top Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#060b13]/85 backdrop-blur-md border-b border-slate-800/60">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
       <!-- Sun Lab Logo -->
       <a href="#home" class="flex items-center gap-3">
         <div class="relative flex items-center justify-center w-8 h-8">
-          <!-- Sun Icon with DNA twist hint -->
           <svg class="w-8 h-8 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="4"></circle>
             <path d="M12 2v2"></path>
@@ -28,51 +43,48 @@
             <path d="M9 16c2 1 4 1 6-1" stroke="#22d3ee" stroke-width="2.5"></path>
           </svg>
         </div>
-        <span class="text-xl font-bold tracking-wider text-white">SUN <span class="font-normal text-slate-300">LAB</span></span>
+        <span class="text-xl font-bold tracking-wider text-white">SUN <span class="font-light text-slate-300">LAB</span></span>
       </a>
 
       <!-- Center Links -->
-      <div class="hidden md:flex items-center gap-10 text-xs tracking-wider uppercase font-medium text-slate-400">
+      <div class="hidden md:flex items-center gap-8 text-xs tracking-wider uppercase font-medium text-slate-400">
+        <a href="#question" class="hover:text-white transition-colors">Our Question</a>
         <a href="#research" class="hover:text-white transition-colors">Research</a>
-        <a href="#approach" class="hover:text-white transition-colors">Approach</a>
         <a href="#publications" class="hover:text-white transition-colors">Publications</a>
         <a href="#team" class="hover:text-white transition-colors">Team</a>
+        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
       </div>
 
-      <!-- Join Us Action -->
-      <a href="#join" class="text-xs font-semibold px-5 py-2.5 rounded-full border border-slate-700 bg-transparent text-slate-200 hover:border-cyan-400 hover:text-cyan-400 transition-all flex items-center gap-1.5">
+      <!-- Join Us CTA -->
+      <a href="#join" class="text-xs font-semibold px-5 py-2.5 rounded-full border border-slate-700 bg-slate-900/60 text-slate-200 hover:border-cyan-400 hover:text-cyan-400 transition-all flex items-center gap-1.5">
         JOIN US <span class="text-[10px]">↗</span>
       </a>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header id="home" class="relative min-h-screen bg-[#070e18] bg-grid-pattern pt-32 pb-16 px-6 flex flex-col justify-between border-b border-slate-900">
+  <!-- Section 1: Hero Header -->
+  <header id="home" class="relative min-h-[90vh] bg-[#070e18] bg-grid-pattern pt-36 pb-16 px-6 flex flex-col justify-between border-b border-slate-900">
     <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center my-auto">
       
       <!-- Left Column: Copy -->
       <div class="lg:col-span-7">
-        <!-- Sub-tag -->
-        <div class="inline-flex items-center gap-2 text-[11px] font-mono tracking-widest text-slate-400 uppercase mb-8">
+        <div class="inline-flex items-center gap-2 text-[11px] font-mono tracking-widest text-slate-400 uppercase mb-6">
           <span class="w-2 h-2 rounded-full bg-amber-400 shadow-[0_0_8px_#fbbf24]"></span>
           COMPUTATIONAL GENOMICS × HUMAN DISEASE
         </div>
 
-        <!-- Headline -->
         <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-white leading-none mb-3">
           Decoding the
         </h1>
-        <h1 class="text-5xl md:text-7xl font-serif italic text-amber-400 font-normal tracking-normal leading-tight mb-8">
+        <h1 class="text-5xl md:text-7xl font-serif-italic text-amber-400 tracking-normal leading-tight mb-8">
           repetitive <span class="font-sans not-italic font-bold text-white tracking-tight">genome.</span>
         </h1>
 
-        <!-- Mission -->
         <p class="text-slate-400 text-base md:text-lg leading-relaxed max-w-lg mb-10 font-normal">
           We uncover how hidden regions of our DNA reshape cellular identity, immune responses, and disease evolution.
         </p>
 
-        <!-- CTA -->
-        <a href="#research" class="inline-flex items-center gap-3 text-xs tracking-widest font-mono text-slate-300 uppercase hover:text-cyan-400 transition-colors group">
+        <a href="#question" class="inline-flex items-center gap-3 text-xs tracking-widest font-mono text-slate-300 uppercase hover:text-cyan-400 transition-colors group">
           EXPLORE OUR RESEARCH
           <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
         </a>
@@ -82,10 +94,9 @@
       <div class="lg:col-span-5">
         <div class="rounded-2xl bg-[#0b1524]/90 border border-[#16263d] p-6 shadow-2xl backdrop-blur-sm">
           
-          <!-- Card Header -->
           <div class="flex items-center justify-between text-[10px] font-mono tracking-wider text-slate-400 uppercase mb-6 pb-3 border-b border-slate-800/80">
             <span>REPEAT LANDSCAPE</span>
-            <span class="text-slate-500">CHR7 • 2026</span>
+            <span class="text-slate-500 font-mono">CHR7 • 2026</span>
           </div>
 
           <!-- DNA Sequence Grid Tiles -->
@@ -116,7 +127,6 @@
             <div class="flex-1 h-[40%] bg-teal-800/60 rounded-t"></div>
           </div>
 
-          <!-- Signal Metric Footer -->
           <div class="flex items-center justify-between text-[11px] font-mono border-t border-slate-800/80 pt-4">
             <span class="tracking-wider text-slate-400 uppercase">CELL IDENTITY SIGNAL</span>
             <span class="text-amber-400 font-bold flex items-center gap-1">
@@ -129,39 +139,36 @@
 
     </div>
 
-    <!-- Section Bottom Status Bar -->
+    <!-- Hero Bottom Bar -->
     <div class="max-w-7xl mx-auto w-full flex justify-between items-center text-[10px] font-mono tracking-widest uppercase text-slate-400 pt-6">
       <span>LED BY DR. SUN</span>
-      <a href="#research" class="hover:text-cyan-400 transition-colors flex items-center gap-1">
+      <a href="#question" class="hover:text-cyan-400 transition-colors flex items-center gap-1">
         SCROLL TO DISCOVER <span class="text-xs">↓</span>
       </a>
     </div>
   </header>
-  
-<!-- Our Question Section (Dark Theme) -->
-  <section class="py-24 px-6 max-w-7xl mx-auto border-b border-slate-900">
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-      <!-- Left Label -->
-      <div class="md:col-span-3 flex items-center gap-2 text-xs font-mono font-medium tracking-widest text-slate-400 uppercase pt-2">
-        <span class="text-cyan-400 text-sm">✻</span> OUR QUESTION
+
+  <!-- Section 2: Our Question (Editorial Accent Banner) -->
+  <section id="question" class="py-24 px-6 bg-[#f7f5ee] text-slate-900 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+      <div class="md:col-span-3 flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-slate-600 uppercase pt-2">
+        <span class="text-slate-900 text-sm">✻</span> OUR QUESTION
       </div>
-      <!-- Right Content -->
       <div class="md:col-span-9 max-w-3xl">
-        <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white leading-tight mb-2">
+        <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-[#111827] leading-tight mb-2">
           Half of the human genome is repetitive.
         </h2>
-        <h3 class="text-3xl md:text-5xl font-serif italic text-cyan-400 leading-tight mb-8">
+        <h3 class="text-3xl md:text-5xl font-serif-italic text-[#1b7f8e] leading-tight mb-8">
           We ask what it remembers.
         </h3>
-        <p class="text-slate-400 text-base md:text-lg leading-relaxed font-normal max-w-2xl">
+        <p class="text-slate-600 text-base md:text-lg leading-relaxed font-normal max-w-2xl">
           Long treated as genomic noise, repetitive DNA is a dynamic regulatory system. When its control breaks down, it can alter cell fate, activate immune pathways, and accelerate disease.
         </p>
       </div>
     </div>
   </section>
-  
 
-  <!-- Research Section -->
+  <!-- Section 3: Research Program -->
   <section id="research" class="py-24 px-6 max-w-7xl mx-auto border-b border-slate-900">
     <div class="text-center max-w-2xl mx-auto mb-16">
       <h2 class="text-xs font-bold tracking-widest text-cyan-400 uppercase mb-2">Research Program</h2>
@@ -170,7 +177,7 @@
     <div class="grid md:grid-cols-3 gap-8">
       
       <!-- Theme 1 -->
-      <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800/80 hover:border-cyan-500/50 transition-all group">
+      <div class="p-8 rounded-2xl bg-[#0b1524]/60 border border-slate-800 hover:border-cyan-500/50 transition-all group">
         <div class="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-800/40 flex items-center justify-center text-cyan-400 mb-6 font-mono text-sm font-bold">
           01
         </div>
@@ -184,7 +191,7 @@
       </div>
 
       <!-- Theme 2 -->
-      <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800/80 hover:border-cyan-500/50 transition-all group">
+      <div class="p-8 rounded-2xl bg-[#0b1524]/60 border border-slate-800 hover:border-cyan-500/50 transition-all group">
         <div class="w-12 h-12 rounded-xl bg-blue-950/60 border border-blue-800/40 flex items-center justify-center text-blue-400 mb-6 font-mono text-sm font-bold">
           02
         </div>
@@ -198,7 +205,7 @@
       </div>
 
       <!-- Theme 3 -->
-      <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800/80 hover:border-cyan-500/50 transition-all group">
+      <div class="p-8 rounded-2xl bg-[#0b1524]/60 border border-slate-800 hover:border-cyan-500/50 transition-all group">
         <div class="w-12 h-12 rounded-xl bg-purple-950/60 border border-purple-800/40 flex items-center justify-center text-purple-400 mb-6 font-mono text-sm font-bold">
           03
         </div>
@@ -213,7 +220,7 @@
     </div>
   </section>
 
-  <!-- Publications Section -->
+  <!-- Section 4: Publications -->
   <section id="publications" class="py-24 px-6 max-w-5xl mx-auto border-b border-slate-900">
     <div class="text-center max-w-2xl mx-auto mb-16">
       <h2 class="text-xs font-bold tracking-widest text-cyan-400 uppercase mb-2">Scientific Output</h2>
@@ -222,11 +229,11 @@
     <div class="space-y-6">
       
       <!-- Pub 1 -->
-      <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div class="p-6 rounded-xl bg-[#0b1524]/40 border border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div class="flex items-center gap-2 mb-2">
             <span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-emerald-950 text-emerald-400 border border-emerald-800/60">Preprint / 2026</span>
-            <span class="text-xs text-slate-500">bioRxiv</span>
+            <span class="text-xs text-slate-500 font-mono">bioRxiv</span>
           </div>
           <h4 class="text-base font-medium text-white mb-1">
             Locus-specific activation of transposable elements triggers dsRNA-mediated immune surveillance in cancer models
@@ -242,11 +249,11 @@
       </div>
 
       <!-- Pub 2 -->
-      <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div class="p-6 rounded-xl bg-[#0b1524]/40 border border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div class="flex items-center gap-2 mb-2">
             <span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-blue-950 text-blue-400 border border-blue-800/60">Journal Article</span>
-            <span class="text-xs text-slate-500">Cancer Cell</span>
+            <span class="text-xs text-slate-500 font-mono">Cancer Cell</span>
           </div>
           <h4 class="text-base font-medium text-white mb-1">
             Single-cell mapping of microenvironmental remodeling during epigenetic driver mutation progression
@@ -264,7 +271,7 @@
     </div>
   </section>
 
-  <!-- Team Section -->
+  <!-- Section 5: Team -->
   <section id="team" class="py-24 px-6 max-w-7xl mx-auto border-b border-slate-900">
     <div class="text-center max-w-2xl mx-auto mb-16">
       <h2 class="text-xs font-bold tracking-widest text-cyan-400 uppercase mb-2">People</h2>
@@ -272,8 +279,8 @@
     </div>
 
     <!-- PI Card -->
-    <div class="max-w-3xl mx-auto p-8 rounded-2xl bg-slate-900/60 border border-slate-800 flex flex-col md:flex-row items-center gap-8 mb-16">
-      <div class="w-32 h-32 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-500 shrink-0 font-mono text-xs">
+    <div class="max-w-3xl mx-auto p-8 rounded-2xl bg-[#0b1524]/80 border border-slate-800 flex flex-col md:flex-row items-center gap-8 mb-16 shadow-xl">
+      <div class="w-32 h-32 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-400 shrink-0 font-mono text-xs">
         [ Photo ]
       </div>
       <div>
@@ -286,28 +293,30 @@
           Focuses on understanding non-coding genomic regulation, retrotransposon biology, and computational oncology through single-cell and high-throughput methodologies.
         </p>
         <div class="flex gap-4 text-xs font-medium text-cyan-400">
+          <a href="mailto:siyu_sun@urmc.rochester.edu" class="hover:underline">siyu_sun@urmc.rochester.edu</a>
+          <span class="text-slate-700">•</span>
           <a href="#" class="hover:underline">Google Scholar</a>
-          <a href="#" class="hover:underline">GitHub</a>
-          <a href="#" class="hover:underline">Email</a>
+          <span class="text-slate-700">•</span>
+          <a href="https://github.com/ss6025" target="_blank" class="hover:underline">GitHub</a>
         </div>
       </div>
     </div>
 
-    <!-- Active Hiring Cards / Team Grid -->
+    <!-- Active Hiring Positions Cards -->
     <div class="grid md:grid-cols-3 gap-6">
-      <div class="p-6 rounded-xl bg-slate-900/30 border border-dashed border-slate-800 text-center">
+      <div class="p-6 rounded-xl bg-slate-900/40 border border-dashed border-slate-800 text-center">
         <span class="text-xs font-mono text-cyan-400 uppercase tracking-wide">Recruiting</span>
         <h5 class="text-lg font-semibold text-white mt-2 mb-1">Postdoctoral Fellow</h5>
         <p class="text-xs text-slate-400 mb-4">Computational biology, repeat genomics, and single-cell analysis.</p>
         <a href="#join" class="text-xs text-cyan-400 hover:underline">View details →</a>
       </div>
-      <div class="p-6 rounded-xl bg-slate-900/30 border border-dashed border-slate-800 text-center">
+      <div class="p-6 rounded-xl bg-slate-900/40 border border-dashed border-slate-800 text-center">
         <span class="text-xs font-mono text-cyan-400 uppercase tracking-wide">Recruiting</span>
         <h5 class="text-lg font-semibold text-white mt-2 mb-1">Bioinformatician</h5>
         <p class="text-xs text-slate-400 mb-4">Pipeline orchestration, HPC management, and genomic data science.</p>
         <a href="#join" class="text-xs text-cyan-400 hover:underline">View details →</a>
       </div>
-      <div class="p-6 rounded-xl bg-slate-900/30 border border-dashed border-slate-800 text-center">
+      <div class="p-6 rounded-xl bg-slate-900/40 border border-dashed border-slate-800 text-center">
         <span class="text-xs font-mono text-cyan-400 uppercase tracking-wide">Accepting</span>
         <h5 class="text-lg font-semibold text-white mt-2 mb-1">Graduate Students</h5>
         <p class="text-xs text-slate-400 mb-4">Ph.D. rotations and Master's thesis projects in systems biology.</p>
@@ -316,7 +325,7 @@
     </div>
   </section>
 
-  <!-- Join Us / Open Positions Section -->
+  <!-- Section 6: Join Us -->
   <section id="join" class="py-24 px-6 max-w-4xl mx-auto border-b border-slate-900">
     <div class="text-center max-w-2xl mx-auto mb-16">
       <h2 class="text-xs font-bold tracking-widest text-cyan-400 uppercase mb-2">Careers</h2>
@@ -328,33 +337,33 @@
 
     <div class="space-y-6">
       <!-- Role 1 -->
-      <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800">
+      <div class="p-6 rounded-xl bg-[#0b1524]/60 border border-slate-800">
         <div class="flex items-center justify-between mb-3">
           <h4 class="text-lg font-semibold text-white">Postdoctoral Fellow (Computational / Systems Biology)</h4>
           <span class="text-xs font-mono px-2 py-0.5 rounded bg-cyan-950 text-cyan-400 border border-cyan-800/60">Open</span>
         </div>
-        <p class="text-sm text-slate-300 mb-3">
+        <p class="text-sm text-slate-300">
           Candidates must hold or be completing a Ph.D. in Computational Biology, Bioinformatics, Computer Science, or a related field. Strong programming proficiency in Python/R, experience with high-throughput sequencing datasets (RNA-seq, single-cell multi-omics), and first-author publications are required.
         </p>
       </div>
 
       <!-- Role 2 -->
-      <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800">
+      <div class="p-6 rounded-xl bg-[#0b1524]/60 border border-slate-800">
         <div class="flex items-center justify-between mb-3">
           <h4 class="text-lg font-semibold text-white">Bioinformatician / Computational Staff Scientist</h4>
           <span class="text-xs font-mono px-2 py-0.5 rounded bg-cyan-950 text-cyan-400 border border-cyan-800/60">Open</span>
         </div>
-        <p class="text-sm text-slate-300 mb-3">
-          B.S. or M.S. in Bioinformatics, Computer Science, or Data Science. Responsible for maintaining scalable data analysis workflows (Nextflow/Snakemake), managing genomic data pipelines, and contributing to primary collaborative manuscripts.
+        <p class="text-sm text-slate-300">
+          B.S. or M.S. in Bioinformatics, Computer Science, or Data Science. Responsible for maintaining scalable data analysis workflows (Nextflow/Snakemake), managing genomic data pipelines, and contributing to collaborative manuscripts.
         </p>
       </div>
 
-      <!-- Application Box -->
-      <div class="p-8 rounded-2xl bg-cyan-950/30 border border-cyan-800/50 mt-10">
+      <!-- Application Box with exact email -->
+      <div class="p-8 rounded-2xl bg-cyan-950/20 border border-cyan-800/50 mt-10">
         <h4 class="text-base font-bold text-white mb-2">How to Apply</h4>
         <p class="text-sm text-slate-300 mb-4 leading-relaxed">
-          Please email your inquiry directly to the PI with the subject format: <br>
-          <code class="text-cyan-300 bg-slate-950/80 px-2 py-1 rounded text-xs mt-1 inline-block">[Sun Lab Application] - [Position] - [Your Name]</code>
+          Please email your inquiry directly to Dr. Sun at <a href="mailto:siyu_sun@urmc.rochester.edu" class="text-cyan-400 font-semibold underline">siyu_sun@urmc.rochester.edu</a> with the subject line format: <br>
+          <code class="text-cyan-300 bg-slate-950/80 px-2 py-1 rounded text-xs mt-2 inline-block">[Sun Lab Application] - [Position] - [Your Name]</code>
         </p>
         <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside mb-6">
           <li>Curriculum Vitae (CV)</li>
@@ -362,29 +371,31 @@
           <li>Links to GitHub / code repositories or representative publications</li>
           <li>Contact information for 2–3 references</li>
         </ul>
-        <a href="mailto:siyu_sun@urmc.rochester.edu" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-cyan-500 text-slate-950 font-semibold text-xs hover:bg-cyan-400 transition-all">
-          Email Your Application
+        <a href="mailto:siyu_sun@urmc.rochester.edu?subject=[Sun%20Lab%20Application]" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-cyan-500 text-slate-950 font-semibold text-xs hover:bg-cyan-400 transition-all shadow-[0_0_15px_rgba(34,211,238,0.25)]">
+          Email Application (siyu_sun@urmc.rochester.edu)
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Contact & Footer -->
+  <!-- Section 7: Contact & Footer -->
   <footer id="contact" class="py-16 px-6 max-w-7xl mx-auto text-center md:text-left">
     <div class="flex flex-col md:flex-row justify-between items-center gap-8 text-sm text-slate-500">
       <div>
-        <p class="font-bold text-slate-300 mb-1">Sun Laboratory</p>
-        <p>Department of Biomedical Genetics / Computational Biology</p>
+        <p class="font-bold text-slate-200 mb-1">Sun Laboratory</p>
+        <p>University of Rochester Medical Center</p>
         <p>Rochester, NY</p>
+        <p class="mt-2 text-cyan-400 text-xs font-mono">siyu_sun@urmc.rochester.edu</p>
       </div>
-      <div class="flex gap-6 text-slate-400">
+      <div class="flex gap-6 text-xs tracking-wider uppercase font-medium text-slate-400">
         <a href="#home" class="hover:text-cyan-400 transition-colors">Top</a>
+        <a href="#question" class="hover:text-cyan-400 transition-colors">Question</a>
         <a href="#research" class="hover:text-cyan-400 transition-colors">Research</a>
         <a href="#team" class="hover:text-cyan-400 transition-colors">Team</a>
         <a href="#join" class="hover:text-cyan-400 transition-colors">Join</a>
       </div>
     </div>
-    <div class="mt-8 pt-8 border-t border-slate-900 text-center text-xs text-slate-600">
+    <div class="mt-8 pt-8 border-t border-slate-900 text-center text-xs text-slate-600 font-mono">
       &copy; 2026 The Sun Lab. All rights reserved.
     </div>
   </footer>
