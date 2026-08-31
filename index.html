@@ -187,8 +187,8 @@
     </div>
   </section>
 
-  <!-- Section: Clinical Collaboration -->
-  <section id="clinical" class="py-24 px-6 border-b border-slate-900 bg-slate-950 relative overflow-hidden">
+<!-- Section: Clinical Collaboration -->
+  <section id="clinical" class="py-24 px-6 border-b border-slate-900 bg-[#060b13] relative overflow-hidden">
     <!-- Background Glow Accent -->
     <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -200,7 +200,7 @@
           <span class="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_8px_#22d3ee]"></span>
           TRANSLATIONAL IMPACT
         </div>
-        <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white leading-tight mb-6">
+        <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-slate-100 leading-tight mb-6">
           Bridging Computation &amp; <br />
           <span class="text-cyan-400">Clinical Oncology.</span>
         </h2>
@@ -209,55 +209,83 @@
         </p>
       </div>
 
-      <!-- 4-Column Collaboration Grid -->
+      <!-- 4-Column Collaboration Grid with Dynamic Hover Highlights -->
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
         
-        <!-- Card 1: Personalized Vaccines (Featured) -->
-        <div class="p-7 rounded-2xl bg-[#0b1524]/60 border border-cyan-500/30 hover:border-cyan-400 transition-all group relative">
-          <div class="w-11 h-11 rounded-xl bg-cyan-950/70 border border-cyan-700/50 flex items-center justify-center text-cyan-300 mb-6 font-mono text-sm font-bold shadow-[0_0_12px_rgba(34,211,238,0.2)]">
-            01
+        <!-- Card 1 -->
+        <div class="p-7 rounded-2xl bg-[#09111e]/70 border border-slate-800 hover:border-cyan-500/70 hover:bg-[#0c1729] hover:-translate-y-1 hover:shadow-[0_12px_28px_-6px_rgba(6,182,212,0.18)] transition-all duration-300 group flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 mb-6 font-mono text-xs font-semibold flex items-center justify-center group-hover:border-cyan-400/80 group-hover:bg-cyan-950/50 group-hover:text-cyan-300 group-hover:shadow-[0_0_12px_rgba(34,211,238,0.25)] transition-all duration-300">
+              01
+            </div>
+            <h3 class="text-lg font-semibold text-slate-200 mb-3 group-hover:text-cyan-300 transition-colors duration-200">
+              Personalized Repeat Vaccines
+            </h3>
+            <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-6 group-hover:text-slate-300 transition-colors duration-200">
+              Identifying tumor-specific cryptic peptides and neoantigens derived from transposable element activation to design custom mRNA and peptide immunotherapies.
+            </p>
           </div>
-          <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors">Personalized Repeat Vaccines</h3>
-          <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-4">
-            Identifying tumor-specific cryptic peptides and neoantigens derived from transposable element activation to design custom mRNA and peptide immunotherapies.
-          </p>
-          <span class="text-[11px] font-mono text-cyan-400/80">#NeoantigenDiscovery #CancerVaccines</span>
+          <div class="font-mono text-[11px] text-slate-500 group-hover:text-cyan-400/90 transition-colors duration-200 space-y-0.5">
+            <div>#NeoantigenDiscovery</div>
+            <div>#CancerVaccines</div>
+          </div>
         </div>
 
-        <!-- Card 2: Patient Cohorts -->
-        <div class="p-7 rounded-2xl bg-[#0b1524]/60 border border-slate-800 hover:border-slate-700 transition-all group">
-          <div class="w-11 h-11 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-center text-slate-300 mb-6 font-mono text-sm font-bold">
-            02
+        <!-- Card 2 -->
+        <div class="p-7 rounded-2xl bg-[#09111e]/70 border border-slate-800 hover:border-cyan-500/70 hover:bg-[#0c1729] hover:-translate-y-1 hover:shadow-[0_12px_28px_-6px_rgba(6,182,212,0.18)] transition-all duration-300 group flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 mb-6 font-mono text-xs font-semibold flex items-center justify-center group-hover:border-cyan-400/80 group-hover:bg-cyan-950/50 group-hover:text-cyan-300 group-hover:shadow-[0_0_12px_rgba(34,211,238,0.25)] transition-all duration-300">
+              02
+            </div>
+            <h3 class="text-lg font-semibold text-slate-200 mb-3 group-hover:text-cyan-300 transition-colors duration-200">
+              Patient Cohort Multi-Omics
+            </h3>
+            <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-6 group-hover:text-slate-300 transition-colors duration-200">
+              Directly profiling patient biopsies via single-cell RNA-seq and spatial transcriptomics to map native tumor heterogeneity and repeat-induced immune niches.
+            </p>
           </div>
-          <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-white transition-colors">Patient Cohort Multi-Omics</h3>
-          <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-4">
-            Directly profiling patient biopsies via single-cell RNA-seq and spatial transcriptomics to map native tumor heterogeneity and repeat-induced immune niches.
-          </p>
-          <span class="text-[11px] font-mono text-slate-500">#TranslationalCohorts #SpatialProfiling</span>
+          <div class="font-mono text-[11px] text-slate-500 group-hover:text-cyan-400/90 transition-colors duration-200 space-y-0.5">
+            <div>#TranslationalCohorts</div>
+            <div>#SpatialProfiling</div>
+          </div>
         </div>
 
-        <!-- Card 3: Biomarker Stratification -->
-        <div class="p-7 rounded-2xl bg-[#0b1524]/60 border border-slate-800 hover:border-slate-700 transition-all group">
-          <div class="w-11 h-11 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-center text-slate-300 mb-6 font-mono text-sm font-bold">
-            03
+        <!-- Card 3 -->
+        <div class="p-7 rounded-2xl bg-[#09111e]/70 border border-slate-800 hover:border-cyan-500/70 hover:bg-[#0c1729] hover:-translate-y-1 hover:shadow-[0_12px_28px_-6px_rgba(6,182,212,0.18)] transition-all duration-300 group flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 mb-6 font-mono text-xs font-semibold flex items-center justify-center group-hover:border-cyan-400/80 group-hover:bg-cyan-950/50 group-hover:text-cyan-300 group-hover:shadow-[0_0_12px_rgba(34,211,238,0.25)] transition-all duration-300">
+              03
+            </div>
+            <h3 class="text-lg font-semibold text-slate-200 mb-3 group-hover:text-cyan-300 transition-colors duration-200">
+              Biomarker Stratification
+            </h3>
+            <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-6 group-hover:text-slate-300 transition-colors duration-200">
+              Leveraging transposable element reactivation profiles and dsRNA sensor levels as predictive biomarkers for checkpoint inhibitor response and tumor recurrence.
+            </p>
           </div>
-          <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-white transition-colors">Biomarker Stratification</h3>
-          <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-4">
-            Leveraging transposable element reactivation profiles and dsRNA sensor levels as predictive biomarkers for checkpoint inhibitor response and tumor recurrence.
-          </p>
-          <span class="text-[11px] font-mono text-slate-500">#Immunotherapy #PredictiveSignatures</span>
+          <div class="font-mono text-[11px] text-slate-500 group-hover:text-cyan-400/90 transition-colors duration-200 space-y-0.5">
+            <div>#Immunotherapy</div>
+            <div>#PredictiveSignatures</div>
+          </div>
         </div>
 
-        <!-- Card 4: Trial Integration -->
-        <div class="p-7 rounded-2xl bg-[#0b1524]/60 border border-slate-800 hover:border-slate-700 transition-all group">
-          <div class="w-11 h-11 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-center text-slate-300 mb-6 font-mono text-sm font-bold">
-            04
+        <!-- Card 4 -->
+        <div class="p-7 rounded-2xl bg-[#09111e]/70 border border-slate-800 hover:border-cyan-500/70 hover:bg-[#0c1729] hover:-translate-y-1 hover:shadow-[0_12px_28px_-6px_rgba(6,182,212,0.18)] transition-all duration-300 group flex flex-col justify-between">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 mb-6 font-mono text-xs font-semibold flex items-center justify-center group-hover:border-cyan-400/80 group-hover:bg-cyan-950/50 group-hover:text-cyan-300 group-hover:shadow-[0_0_12px_rgba(34,211,238,0.25)] transition-all duration-300">
+              04
+            </div>
+            <h3 class="text-lg font-semibold text-slate-200 mb-3 group-hover:text-cyan-300 transition-colors duration-200">
+              Trial-Embedded Workflows
+            </h3>
+            <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-6 group-hover:text-slate-300 transition-colors duration-200">
+              Deploying scalable, reproducible analysis pipelines on longitudinal clinical trial cohorts to monitor dynamic immune activation and escape mechanisms.
+            </p>
           </div>
-          <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-white transition-colors">Trial-Embedded Workflows</h3>
-          <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-4">
-            Deploying scalable, reproducible analysis pipelines on longitudinal clinical trial cohorts to monitor dynamic immune activation and escape mechanisms.
-          </p>
-          <span class="text-[11px] font-mono text-slate-500">#ClinicalTrials #TherapeuticResistance</span>
+          <div class="font-mono text-[11px] text-slate-500 group-hover:text-cyan-400/90 transition-colors duration-200 space-y-0.5">
+            <div>#ClinicalTrials</div>
+            <div>#TherapeuticResistance</div>
+          </div>
         </div>
 
       </div>
@@ -265,12 +293,12 @@
       <!-- Institutional Partnership Callout -->
       <div class="p-8 rounded-2xl bg-[#0b1524]/80 border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
         <div>
-          <h4 class="text-base font-semibold text-white mb-1">Translational Collaboration &amp; Trial Inquiries</h4>
+          <h4 class="text-base font-semibold text-slate-200 mb-1">Translational Collaboration &amp; Trial Inquiries</h4>
           <p class="text-xs md:text-sm text-slate-400">
             We actively collaborate on clinical trial correlative studies, neoantigen discovery projects, and translational grant proposals.
           </p>
         </div>
-        <a href="mailto:siyu_sun@urmc.rochester.edu?subject=[Clinical%20Collaboration%20Inquiry%20-%20Repeat%20Vaccines]" class="shrink-0 px-5 py-2.5 rounded-lg bg-cyan-500 text-slate-950 font-semibold text-xs uppercase tracking-wider hover:bg-cyan-400 transition-all shadow-[0_0_15px_rgba(34,211,238,0.2)]">
+        <a href="mailto:siyu_sun@urmc.rochester.edu?subject=[Clinical%20Collaboration%20Inquiry%20-%20Repeat%20Vaccines]" class="shrink-0 px-6 py-3 rounded-xl bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-bold text-xs uppercase tracking-wider transition-all duration-200 shadow-[0_0_18px_rgba(34,211,238,0.35)] hover:shadow-[0_0_24px_rgba(34,211,238,0.5)]">
           Propose a Collaboration
         </a>
       </div>
@@ -429,10 +457,9 @@
         <div class="flex flex-wrap gap-4 text-xs font-medium text-cyan-400">
           <a href="mailto:siyu_sun@urmc.rochester.edu" class="hover:underline">siyu_sun@urmc.rochester.edu</a>
           <span class="text-slate-700">•</span>
-          <a href="#" class="hover:underline">Google Scholar</a>
-          <span class="text-slate-700">•</span>
-          <a href="https://github.com/ss6025" target="_blank" class="hover:underline">GitHub</a>
-        </div>
+          <a href="https://scholar.google.com/citations?user=KciMg6AAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="hover:underline flex items-center gap-1">
+            Google Scholar ↗
+          </a>
       </div>
     </div>
 
@@ -477,18 +504,18 @@
           <span class="text-xs font-mono px-2 py-0.5 rounded bg-cyan-950 text-cyan-400 border border-cyan-800/60">Open</span>
         </div>
         <p class="text-sm text-slate-300 mb-3">
-          Candidates must hold or be completing a Ph.D. in Computational Biology, Bioinformatics, Computer Science, or a related field. Strong programming proficiency in Python/R, experience with high-throughput sequencing datasets (RNA-seq, single-cell multi-omics), and first-author publications are required.
+          Candidates must hold or be completing a Ph.D. in System Biology, Evolutionrayr Biology, Computational Biology, Bioinformatics, Computer Science, or a related field. Strong programming proficiency in Python/R, experience with high-throughput sequencing datasets (RNA-seq, single-cell multi-omics), and first-author publications are required.
         </p>
       </div>
 
       <!-- Role 2 -->
       <div class="p-6 rounded-xl bg-slate-900/60 border border-slate-800">
         <div class="flex items-center justify-between mb-3">
-          <h4 class="text-lg font-semibold text-white">Bioinformatician / Computational Staff Scientist</h4>
+          <h4 class="text-lg font-semibold text-white">Bioinformatician / Data Engineer</h4>
           <span class="text-xs font-mono px-2 py-0.5 rounded bg-cyan-950 text-cyan-400 border border-cyan-800/60">Open</span>
         </div>
         <p class="text-sm text-slate-300 mb-3">
-          B.S. or M.S. in Bioinformatics, Computer Science, or Data Science. Responsible for maintaining scalable data analysis workflows (Nextflow/Snakemake), managing genomic data pipelines, and contributing to primary collaborative manuscripts.
+          B.S. or M.S. in Bioinformatics, Computer Science, or Data Science. Responsible for maintaining scalable data analysis workflows (Nextflow/Snakemake), managing genomic data pipelines, and contributing to primary collaborative manuscripts and grant writing.
         </p>
       </div>
 
